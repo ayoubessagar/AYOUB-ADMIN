@@ -29,8 +29,9 @@ jobs:
           enablement: true
       - name: Prepare Snack Layali website
         run: |
-          mkdir -p _site
+          mkdir -p _site/images
           cp "SNACK LAYALI RH.html" _site/index.html
+          cp images/snack-layali-logo.jpe _site/images/snack-layali-logo.jpe
       - name: Upload website files
         uses: actions/upload-pages-artifact@v3
         with:

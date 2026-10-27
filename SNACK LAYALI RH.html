@@ -9,6 +9,7 @@
   <meta property="og:locale" content="fr_MA">
   <meta property="og:title" content="Snack Layali | Cuisine gourmande à Berrechid">
   <meta property="og:description" content="Découvrez les spécialités et snacks de Snack Layali à Berrechid.">
+  <link rel="icon" type="image/jpeg" href="images/snack-layali-logo.jpe">
   <link rel="preconnect" href="https://images.unsplash.com">
   <title>Snack Layali | Cuisine gourmande à Berrechid</title>
   <script type="application/ld+json">
@@ -130,7 +131,7 @@
       line-height: 1.1;
     }
 
-    .brand-mark {
+    .brand-logo-frame {
       display: grid;
       width: 42px;
       height: 42px;
@@ -138,8 +139,15 @@
       place-items: center;
       border: 1px solid rgba(239, 189, 90, .64);
       border-radius: 50%;
-      color: var(--gold);
-      font-size: 22px;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .brand-logo {
+      width: 130%;
+      max-width: none;
+      height: 130%;
+      object-fit: cover;
     }
 
     .brand small {
@@ -682,7 +690,7 @@
         font-size: 20px;
       }
 
-      .brand-mark {
+      .brand-logo-frame {
         width: 37px;
         height: 37px;
         flex-basis: 37px;
@@ -815,7 +823,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#accueil" aria-label="Snack Layali, accueil">
-        <span class="brand-mark" aria-hidden="true">L</span>
+        <span class="brand-logo-frame" aria-hidden="true"><img class="brand-logo" src="images/snack-layali-logo.jpe" alt=""></span>
         <span>SNACK LAYALI<small>BERRECHID · MAROC</small></span>
       </a>
       <nav class="main-nav" aria-label="Navigation principale">
