@@ -1,0 +1,1018 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17251c">
+  <meta name="description" content="Snack Layali à Berrechid : cousamia, plats marocains, salades, sandwichs et autres spécialités. Découvrez notre menu et contactez-nous.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_MA">
+  <meta property="og:title" content="Snack Layali | Cuisine gourmande à Berrechid">
+  <meta property="og:description" content="Découvrez les spécialités et snacks de Snack Layali à Berrechid.">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <title>Snack Layali | Cuisine gourmande à Berrechid</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Snack Layali",
+      "telephone": "+212698725831",
+      "servesCuisine": ["Cuisine marocaine", "Cuisine rapide"],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Berrechid",
+        "addressCountry": "MA"
+      }
+    }
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17251c;
+      --ink-soft: #324439;
+      --cream: #faf8f1;
+      --paper: #fffefa;
+      --gold: #efbd5a;
+      --gold-dark: #79500f;
+      --olive: #687755;
+      --text: #263128;
+      --muted: #68716a;
+      --line: #e8e4d8;
+      --shadow: 0 16px 42px rgba(27, 38, 28, .09);
+      font-family: Arial, Helvetica, sans-serif;
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 96px;
+    }
+
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    :focus-visible {
+      outline: 3px solid #ac761a;
+      outline-offset: 4px;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 20;
+      top: 10px;
+      left: 10px;
+      padding: 11px 16px;
+      transform: translateY(-160%);
+      border-radius: 8px;
+      background: var(--gold);
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    .site-header {
+      position: sticky;
+      z-index: 10;
+      top: 0;
+      border-bottom: 1px solid rgba(255, 255, 255, .1);
+      background: rgba(23, 37, 28, .97);
+      color: #fff;
+      backdrop-filter: blur(12px);
+    }
+
+    .header-inner {
+      display: flex;
+      min-height: 76px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 23px;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 42px;
+      height: 42px;
+      flex: 0 0 42px;
+      place-items: center;
+      border: 1px solid rgba(239, 189, 90, .64);
+      border-radius: 50%;
+      color: var(--gold);
+      font-size: 22px;
+    }
+
+    .brand small {
+      display: block;
+      margin-top: 4px;
+      color: #e7d8b7;
+      font: 10px/1.3 Arial, Helvetica, sans-serif;
+      letter-spacing: 2px;
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: clamp(14px, 2.2vw, 26px);
+      font-size: 13px;
+    }
+
+    .main-nav a {
+      padding-block: 10px;
+      color: #f3f0e7;
+    }
+
+    .main-nav a:hover,
+    .main-nav a:focus-visible {
+      color: var(--gold);
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 46px;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 11px 18px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      background: var(--gold);
+      color: #1c2116;
+      font-weight: 700;
+      line-height: 1.25;
+      transition: transform .18s ease, background-color .18s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      background: #f5cd7a;
+    }
+
+    .button-outline {
+      border-color: rgba(255, 255, 255, .58);
+      background: transparent;
+      color: #fff;
+    }
+
+    .button-outline:hover {
+      background: rgba(255, 255, 255, .1);
+      color: #fff;
+    }
+
+    .hero {
+      position: relative;
+      display: flex;
+      min-height: 510px;
+      align-items: center;
+      overflow: hidden;
+      background: #34372a;
+      color: #fff;
+      isolation: isolate;
+    }
+
+    .hero::before {
+      position: absolute;
+      z-index: -2;
+      inset: 0;
+      background: url("https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=2000&q=85") center 52% / cover;
+      content: "";
+    }
+
+    .hero::after {
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(13, 23, 17, .93), rgba(13, 23, 17, .76) 42%, rgba(13, 23, 17, .17));
+      content: "";
+    }
+
+    .hero-content {
+      max-width: 700px;
+      padding-block: 82px;
+    }
+
+    .eyebrow {
+      color: var(--gold-dark);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 2.7px;
+      text-transform: uppercase;
+    }
+
+    .hero .eyebrow {
+      display: inline-block;
+      padding: 7px 11px;
+      border: 1px solid rgba(239, 189, 90, .62);
+      border-radius: 999px;
+      background: rgba(20, 32, 24, .45);
+      color: #ffdb91;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    .hero h1 {
+      max-width: 720px;
+      margin-block: 18px 12px;
+      font: 700 clamp(46px, 7vw, 78px)/1.01 Georgia, "Times New Roman", serif;
+      letter-spacing: -.035em;
+    }
+
+    .hero h1 em {
+      color: var(--gold);
+      font-weight: 400;
+    }
+
+    .hero h2 {
+      margin-bottom: 12px;
+      font: 400 clamp(20px, 3vw, 27px)/1.35 Georgia, "Times New Roman", serif;
+    }
+
+    .hero p {
+      max-width: 570px;
+      margin-bottom: 24px;
+      color: #f0eee7;
+      font-size: 16px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .features {
+      border-bottom: 1px solid #e8e2d2;
+      background: #fffdf8;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+      padding-block: 22px;
+    }
+
+    .feature {
+      display: flex;
+      min-height: 50px;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .feature-icon {
+      color: #997126;
+      font-size: 25px;
+      line-height: 1;
+    }
+
+    .feature strong,
+    .feature small {
+      display: block;
+    }
+
+    .feature strong {
+      font-size: 13px;
+    }
+
+    .feature small {
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .menu-section {
+      padding-block: 76px;
+      background: var(--cream);
+    }
+
+    .section-heading {
+      max-width: 670px;
+      margin: 0 auto 30px;
+      text-align: center;
+    }
+
+    .section-heading h2 {
+      margin-block: 8px;
+      color: var(--ink);
+      font: 700 clamp(34px, 5vw, 47px)/1.12 Georgia, "Times New Roman", serif;
+      letter-spacing: -.025em;
+    }
+
+    .section-heading p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .filter-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-bottom: 27px;
+    }
+
+    .filter-button {
+      min-height: 42px;
+      padding: 9px 15px;
+      border: 1px solid #d6d1c5;
+      border-radius: 999px;
+      background: transparent;
+      color: #384137;
+      cursor: pointer;
+    }
+
+    .filter-button[aria-pressed="true"],
+    .filter-button:hover {
+      border-color: var(--ink);
+      background: var(--ink);
+      color: #fff;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      align-items: stretch;
+      gap: 20px;
+    }
+
+    .dish-card {
+      display: flex;
+      min-width: 0;
+      flex-direction: column;
+      overflow: hidden;
+      border: 1px solid rgba(38, 49, 40, .07);
+      border-radius: 15px;
+      background: #fff;
+      box-shadow: 0 5px 22px rgba(27, 38, 28, .055);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .dish-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+    }
+
+    .dish-photo {
+      position: relative;
+      overflow: hidden;
+      margin: 0;
+      aspect-ratio: 4 / 3;
+      background: linear-gradient(135deg, #e6d5aa, #d6b17c);
+    }
+
+    .dish-photo img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .3s ease;
+    }
+
+    .dish-card:hover .dish-photo img {
+      transform: scale(1.035);
+    }
+
+    .dish-photo.photo-unavailable {
+      display: grid;
+      place-items: center;
+      color: #392f1d;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .dish-photo.photo-unavailable::after {
+      content: "Photo temporairement indisponible";
+    }
+
+    .dish-info {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 18px;
+    }
+
+    .dish-info h3 {
+      margin-bottom: 8px;
+      color: var(--ink);
+      font: 700 22px/1.2 Georgia, "Times New Roman", serif;
+    }
+
+    .dish-info p {
+      margin-bottom: 0;
+      color: #69716a;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .dish-price {
+      margin-top: auto;
+      padding-top: 17px;
+      color: var(--gold-dark);
+      font-size: 17px;
+      font-weight: 800;
+    }
+
+    .dish-tag {
+      display: inline-flex;
+      margin-top: 11px;
+      padding: 5px 9px;
+      border-radius: 999px;
+      background: #f6f0df;
+      color: #695529;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .6px;
+      text-transform: uppercase;
+    }
+
+    .menu-status {
+      min-height: 1.5em;
+      margin-block: 20px 0;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .dish-card[hidden] {
+      display: none;
+    }
+
+    .price-note {
+      margin-block: 10px 0;
+      color: #77786e;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .about-section {
+      padding-block: 76px;
+      background: var(--ink);
+      color: #fff;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 54px;
+    }
+
+    .about-copy .eyebrow {
+      color: var(--gold);
+    }
+
+    .about-copy h2 {
+      margin-block: 10px 14px;
+      font: 700 clamp(32px, 4vw, 43px)/1.12 Georgia, "Times New Roman", serif;
+      letter-spacing: -.02em;
+    }
+
+    .about-copy p {
+      margin-bottom: 0;
+      color: #d7d9d2;
+      line-height: 1.8;
+    }
+
+    .about-reasons {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .reason {
+      display: flex;
+      gap: 10px;
+    }
+
+    .reason-icon {
+      flex: 0 0 auto;
+      color: var(--gold);
+      font-size: 22px;
+    }
+
+    .reason strong,
+    .reason small {
+      display: block;
+    }
+
+    .reason small {
+      margin-top: 5px;
+      color: #c3c9c0;
+      line-height: 1.5;
+    }
+
+    .contact-section {
+      padding-block: 72px;
+      background: #fffdf8;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 19px;
+    }
+
+    .contact-card {
+      padding: 23px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #fff;
+    }
+
+    .contact-card h3 {
+      margin-bottom: 8px;
+      color: var(--ink);
+      font: 700 22px/1.25 Georgia, "Times New Roman", serif;
+    }
+
+    .contact-card p {
+      min-height: 48px;
+      margin-bottom: 17px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .contact-card .button {
+      width: 100%;
+      text-align: center;
+    }
+
+    .contact-card .button-outline {
+      border-color: #9d927c;
+      color: var(--ink);
+    }
+
+    .contact-card .button-outline:hover {
+      background: var(--cream);
+    }
+
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .social-links a {
+      display: inline-flex;
+      min-height: 40px;
+      align-items: center;
+      padding: 8px 11px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .social-links a:hover {
+      border-color: var(--ink);
+      background: var(--ink);
+      color: #fff;
+    }
+
+    .site-footer {
+      padding-block: 21px;
+      background: #101b14;
+      color: #d8d9d2;
+      font-size: 12px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 9px 20px;
+    }
+
+    @media (max-width: 900px) {
+      .header-inner {
+        min-height: 70px;
+        flex-wrap: wrap;
+        padding-block: 10px;
+        gap: 10px 16px;
+      }
+
+      .main-nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 4px 20px;
+      }
+
+      .main-nav a {
+        padding-block: 6px;
+      }
+
+      .feature-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .menu-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+
+    @media (max-width: 620px) {
+      html {
+        scroll-padding-top: 132px;
+      }
+
+      .container {
+        width: min(100% - 32px, 480px);
+      }
+
+      .header-inner {
+        gap: 8px 12px;
+      }
+
+      .brand {
+        gap: 9px;
+        font-size: 20px;
+      }
+
+      .brand-mark {
+        width: 37px;
+        height: 37px;
+        flex-basis: 37px;
+      }
+
+      .header-call {
+        min-height: 40px;
+        padding: 9px 12px;
+        font-size: 13px;
+      }
+
+      .main-nav {
+        justify-content: flex-start;
+        gap: 2px 17px;
+        font-size: 12px;
+      }
+
+      .hero {
+        min-height: 470px;
+      }
+
+      .hero::after {
+        background: linear-gradient(90deg, rgba(13, 23, 17, .91), rgba(13, 23, 17, .65));
+      }
+
+      .hero-content {
+        padding-block: 58px;
+      }
+
+      .hero h1 {
+        font-size: clamp(43px, 12vw, 64px);
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .feature-grid {
+        gap: 14px 9px;
+        padding-block: 18px;
+      }
+
+      .feature {
+        align-items: flex-start;
+        gap: 8px;
+      }
+
+      .feature-icon {
+        font-size: 21px;
+      }
+
+      .feature strong {
+        font-size: 12px;
+      }
+
+      .feature small {
+        font-size: 11px;
+      }
+
+      .menu-section,
+      .about-section,
+      .contact-section {
+        padding-block: 55px;
+      }
+
+      .filter-list {
+        justify-content: flex-start;
+        gap: 8px;
+      }
+
+      .filter-button {
+        min-height: 40px;
+        padding: 8px 12px;
+        font-size: 13px;
+      }
+
+      .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+
+      .dish-photo {
+        aspect-ratio: 16 / 10;
+      }
+
+      .dish-info {
+        padding: 16px;
+      }
+
+      .dish-price {
+        margin-top: 12px;
+      }
+
+      .about-reasons,
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 13px;
+      }
+
+      .contact-card {
+        padding: 19px;
+      }
+
+      .contact-card p {
+        min-height: 0;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#accueil" aria-label="Snack Layali, accueil">
+        <span class="brand-mark" aria-hidden="true">L</span>
+        <span>SNACK LAYALI<small>BERRECHID · MAROC</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="#accueil">Accueil</a>
+        <a href="#menu">Notre menu</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="button header-call" href="tel:+212698725831" aria-label="Appeler Snack Layali au 06 98 72 58 31">☎ Appeler</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="accueil" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-content">
+          <span class="eyebrow">Bienvenue chez Snack Layali</span>
+          <h1 id="hero-title">Le goût du Maroc,<br><em>à votre façon.</em></h1>
+          <h2>Cuisine généreuse et pause gourmande à Berrechid.</h2>
+          <p>Envie d'une cousamia, d'un sandwich ou d'un bon plat ? Découvrez nos spécialités et trouvez votre prochaine pause gourmande.</p>
+          <div class="hero-actions">
+            <a class="button" href="#menu">🍴 Voir le menu</a>
+            <a class="button button-outline" href="tel:+212698725831">☎ 06 98 72 58 31</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" aria-label="L'esprit Snack Layali">
+      <div class="container feature-grid">
+        <div class="feature"><span class="feature-icon" aria-hidden="true">♨</span><div><strong>Saveurs variées</strong><small>Spécialités marocaines & snacks</small></div></div>
+        <div class="feature"><span class="feature-icon" aria-hidden="true">✦</span><div><strong>Un menu généreux</strong><small>Des choix pour toutes les envies</small></div></div>
+        <div class="feature"><span class="feature-icon" aria-hidden="true">♡</span><div><strong>Un accueil chaleureux</strong><small>En famille ou entre amis</small></div></div>
+        <div class="feature"><span class="feature-icon" aria-hidden="true">⌖</span><div><strong>À Berrechid</strong><small>On vous attend !</small></div></div>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <header class="section-heading">
+          <span class="eyebrow">À découvrir</span>
+          <h2 id="menu-title">Notre menu</h2>
+          <p>Des plats et snacks pour les petites faims comme les grands appétits.</p>
+        </header>
+
+        <div class="filter-list" role="group" aria-label="Filtrer les plats par catégorie">
+          <button class="filter-button" type="button" data-filter="all" aria-pressed="true">Tout le menu</button>
+          <button class="filter-button" type="button" data-filter="marocain" aria-pressed="false">Plats marocains</button>
+          <button class="filter-button" type="button" data-filter="salade" aria-pressed="false">Salades</button>
+          <button class="filter-button" type="button" data-filter="snack" aria-pressed="false">Sandwichs & tacos</button>
+          <button class="filter-button" type="button" data-filter="pizza" aria-pressed="false">Pizza & burgers</button>
+          <button class="filter-button" type="button" data-filter="pates" aria-pressed="false">Spaghettis</button>
+          <button class="filter-button" type="button" data-filter="dessert" aria-pressed="false">Desserts</button>
+          <button class="filter-button" type="button" data-filter="boisson" aria-pressed="false">Boissons</button>
+        </div>
+
+        <div class="menu-grid">
+          <article class="dish-card" data-category="marocain">
+            <figure class="dish-photo"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&amp;fit=crop&amp;w=900&amp;q=82" alt="Céréales et légumes frais servis dans une assiette, photo d'illustration pour la Cousamia" loading="eager" fetchpriority="high" decoding="async"></figure>
+            <div class="dish-info"><h3>Cousamia</h3><p>Un généreux couscous aux légumes, inspiré des saveurs traditionnelles.</p><span class="dish-price">À partir de 30 DH*</span><span class="dish-tag">Spécialité marocaine</span></div>
+          </article>
+          <article class="dish-card" data-category="marocain">
+            <figure class="dish-photo"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&amp;fit=crop&amp;w=900&amp;q=82" alt="Assortiment de plats avec viande et légumes, photo d'illustration" loading="lazy" decoding="async"></figure>
+            <div class="dish-info"><h3>Plats marocains</h3><p>Des plats mijotés et savoureux à partager.</p><span class="dish-price">À partir de 40 DH*</span><span class="dish-tag">Cuisine marocaine</span></div>
+          </article>
+          <article class="dish-card" data-category="pates">
+            <figure class="dish-photo"><img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&amp;fit=crop&amp;w=900&amp;q=82" alt="Assiette de spaghettis à la sauce tomate" loading="lazy" decoding="async"></figure>
+            <div class="dish-info"><h3>Spaghettis</h3><p>Des pâtes généreuses en sauce, parfaites pour une pause gourmande.</p><span class="dish-price">À partir de 30 DH*</span><span class="dish-tag">Pâtes</span></div>
+          </article>
+          <article class="dish-card" data-category="salade">
+            <figure class="dish-photo"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&amp;fit=crop&amp;w=900&amp;q=82" alt="Salade fraîche de légumes variés" loading="lazy" decoding="async"></figure>
+            <div class="dish-info"><h3>Salades fraîches</h3><p>Des légumes frais et colorés pour une envie légère.</p><span class="dish-price">À partir de 15 DH*</span><span class="dish-tag">Fraîcheur</span></div>
+          </article>
+          <article class="dish-card" data-category="snack">
+            <figure class="dish-photo"><img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&amp;fit=crop&amp;w=900&amp;q=82" alt="Sandwich garni de légumes et de viande" loading="lazy" decoding="async"></figure>
+            <div class="dish-info"><h3>Sandwichs</h3><p>Un sandwich gourmand, parfait pour une pause rapide.</p><span class="dish-price">À partir de 18 DH*</span><span class="dish-tag">Snack</span></div>
+          </article>
+          <article class="dish-card" data-category="snack">
+            <figure class="dish-photo"><img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&amp;fit=crop&amp;w=900&amp;q=82" alt="Tacos garni, suggestion du menu" loading="lazy" decoding="async"></figure>
+            <div class="dish-info"><h3>Tacos</h3><p>Une garniture généreuse et une pause pleine de goût.</p><span class="dish-price">À partir de 30 DH*</span><span class="dish-tag">Snack</span></div>
+          </article>
+          <article class="dish-card" data-category="pizza">
+            <figure class="dish-photo"><img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&amp;fit=crop&amp;w=900&amp;q=82" alt="Pizza garnie, suggestion du menu" loading="lazy" decoding="async"></figure>
+            <div class="dish-info"><h3>Pizzas</h3><p>Pâte dorée et garnitures savoureuses à partager.</p><span class="dish-price">À partir de 30 DH*</span><span class="dish-tag">Pizza</span></div>
+          </article>
+          <article class="dish-card" data-category="pizza">
+            <figure class="dish-photo"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&amp;fit=crop&amp;w=900&amp;q=82" alt="Burger accompagné de salade" loading="lazy" decoding="async"></figure>
+            <div class="dish-info"><h3>Burgers</h3><p>Un burger généreux pour les petites et grandes faims.</p><span class="dish-price">À partir de 30 DH*</span><span class="dish-tag">Snack</span></div>
+          </article>
+          <article class="dish-card" data-category="dessert">
+            <figure class="dish-photo"><img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&amp;fit=crop&amp;w=900&amp;q=82" alt="Tiramisu italien au cacao, suggestion de dessert" loading="lazy" decoding="async"></figure>
+            <div class="dish-info"><h3>Tiramisu</h3><p>Un dessert crémeux au café et au cacao pour finir sur une note sucrée.</p><span class="dish-price">À partir de 20 DH*</span><span class="dish-tag">Dessert</span></div>
+          </article>
+          <article class="dish-card" data-category="boisson">
+            <figure class="dish-photo"><img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&amp;fit=crop&amp;w=900&amp;q=82" alt="Jus de fruits frais servi dans un verre, sans thé" loading="lazy" decoding="async"></figure>
+            <div class="dish-info"><h3>Boissons fraîches</h3><p>Des boissons fraîches pour accompagner votre repas.</p><span class="dish-price">À partir de 7 DH*</span><span class="dish-tag">Sans thé</span></div>
+          </article>
+        </div>
+        <p class="menu-status" id="menu-status" aria-live="polite" aria-atomic="true">10 suggestions au menu.</p>
+        <p class="price-note">* Photos d’illustration et prix indicatifs à confirmer directement auprès du restaurant.</p>
+      </div>
+    </section>
+
+    <section class="about-section" id="apropos" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <span class="eyebrow">Notre esprit</span>
+          <h2 id="about-title">Une pause gourmande à Berrechid.</h2>
+          <p>Snack Layali réunit spécialités marocaines et incontournables du snack. Parcourez le menu, choisissez ce qui vous fait envie et appelez-nous pour toute question.</p>
+        </div>
+        <div class="about-reasons">
+          <div class="reason"><span class="reason-icon" aria-hidden="true">✦</span><div><strong>Du choix pour tous</strong><small>Plats, salades, sandwichs et snacks.</small></div></div>
+          <div class="reason"><span class="reason-icon" aria-hidden="true">♡</span><div><strong>Un accueil chaleureux</strong><small>Un lieu pour se retrouver et partager.</small></div></div>
+          <div class="reason"><span class="reason-icon" aria-hidden="true">⌖</span><div><strong>À Berrechid</strong><small>Retrouvez-nous dans votre ville.</small></div></div>
+          <div class="reason"><span class="reason-icon" aria-hidden="true">☎</span><div><strong>Une question ?</strong><small>Appelez-nous directement.</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-heading">
+          <span class="eyebrow">On vous répond</span>
+          <h2 id="contact-title">Contact & localisation</h2>
+          <p>Snack Layali à Berrechid. Contactez-nous pour vérifier les horaires et les prix du jour.</p>
+        </header>
+        <div class="contact-grid">
+          <article class="contact-card">
+            <h3>📍 Nous trouver</h3>
+            <p>Berrechid, Maroc<br>Itinéraire et adresse précise sur la carte.</p>
+            <a class="button button-outline" href="https://www.google.com/maps/search/?api=1&amp;query=Snack+Layali+Berrechid+Morocco" target="_blank" rel="noopener noreferrer">Ouvrir Google Maps ↗</a>
+          </article>
+          <article class="contact-card">
+            <h3>☎ Nous appeler</h3>
+            <p>Besoin d’un renseignement sur le menu ou les horaires ? Contactez Snack Layali.</p>
+            <a class="button" href="tel:+212698725831">Appeler le 06 98 72 58 31</a>
+          </article>
+          <article class="contact-card">
+            <h3>Suivez-nous</h3>
+            <p>Recherchez Snack Layali sur les réseaux sociaux.</p>
+            <div class="social-links">
+              <a href="https://www.instagram.com/explore/search/keyword/?q=Snack%20Layali%20Berrechid" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+              <a href="https://www.facebook.com/search/top?q=snack%20layali%20berrechid" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+              <a href="https://www.tiktok.com/search?q=snack%20layali%20berrechid" target="_blank" rel="noopener noreferrer">TikTok ↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year">Snack Layali</span>. Tous droits réservés.</span>
+      <span>Berrechid · Maroc</span>
+    </div>
+  </footer>
+
+  <script>
+    const year = document.getElementById("year");
+    if (year) year.textContent = new Date().getFullYear();
+
+    const filterButtons = document.querySelectorAll(".filter-button");
+    const dishCards = document.querySelectorAll(".dish-card");
+    const menuStatus = document.getElementById("menu-status");
+
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const selectedCategory = button.dataset.filter;
+        let visibleCount = 0;
+
+        filterButtons.forEach((filterButton) => {
+          const isSelected = filterButton === button;
+          filterButton.setAttribute("aria-pressed", String(isSelected));
+        });
+
+        dishCards.forEach((card) => {
+          const isVisible = selectedCategory === "all" || card.dataset.category === selectedCategory;
+          card.hidden = !isVisible;
+          if (isVisible) visibleCount += 1;
+        });
+
+        if (menuStatus) {
+          const categoryLabel = button.textContent.trim().toLowerCase();
+          menuStatus.textContent = selectedCategory === "all"
+            ? `${visibleCount} suggestions au menu.`
+            : `${visibleCount} suggestion(s) : ${categoryLabel}.`;
+        }
+      });
+    });
+
+    document.querySelectorAll(".dish-photo img").forEach((image) => {
+      image.addEventListener("error", () => {
+        image.hidden = true;
+        image.closest(".dish-photo")?.classList.add("photo-unavailable");
+      }, { once: true });
+    });
+  </script>
+</body>
+</html>
