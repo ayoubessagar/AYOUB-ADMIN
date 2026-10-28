@@ -32,6 +32,7 @@ jobs:
           mkdir -p _site/images
           cp "SNACK LAYALI RH.html" _site/index.html
           cp images/snack-layali-logo.jpe _site/images/snack-layali-logo.jpe
+          cp robots.txt sitemap.xml _site/
       - name: Upload website files
         uses: actions/upload-pages-artifact@v3
         with:
